@@ -1,6 +1,6 @@
 // Find the value that is not being repeated inside the given array.
 // Գտնել այն արժեքը որը ընհանրապես չի կրկնվում տրված զանգվածում
-// Օրինակ։ ["a", "a", "b", "a"] //Պատասխան։ 'b'
+// Օրինակ։ ["a", "a", "b", "a"] //Պատասխան։ 'b' d
 
 var arr = ['a','a','b','a'];
 var n = arr.length;
