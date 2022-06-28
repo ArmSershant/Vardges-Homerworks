@@ -6,15 +6,17 @@
 let arr = ['a','a','b','a'];
 let length = arr.length;
 let i,j;
-let result = [];
+let result = '';
 function nonRepeatingElem() {
   for (i = 0; i < length; i++) {
-    for ( j = 0 ; j < length; j++)
-      if (i != j && arr[i] == arr[j])
+    for ( j = 0 ; j < length; j++) {
+      if (i != j && arr[i] == arr[j]) {
         break;
+      };
+    };
     if(j == length)
-        result.push(arr[i]);
-  }
+        result = arr[i];
+  };
   return result;
-}
+};
 console.log(nonRepeatingElem())
