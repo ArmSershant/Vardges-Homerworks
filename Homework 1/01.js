@@ -2,17 +2,19 @@
 // Գտնել այն արժեքը որը ընհանրապես չի կրկնվում տրված զանգվածում
 // Օրինակ։ ["a", "a", "b", "a"] //Պատասխան։ 'b'
 
-let arr = ['a','a','b','a'];
-let result = [];
 
-function notRepeatingElem() {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0 ; j < arr.length; j++)
+let arr = ['a','a','b','a'];
+let length = arr.length;
+let i,j;
+let result = [];
+function nonRepeatingElem() {
+  for (i = 0; i < length; i++) {
+    for ( j = 0 ; j < length; j++)
       if (i != j && arr[i] == arr[j])
         break;
-    if(j == arr.length)
+    if(j == length)
         result.push(arr[i]);
   }
   return result;
 }
-console.log(notRepeatingElem())
+console.log(nonRepeatingElem())
