@@ -1,24 +1,19 @@
 // Write a function to return only unique values of the given array. 
 // Ստեղծել ֆւնկցիա որը վերադարծնում է տրված զանգվածի միայն չկրկնվող անդամները։
-function uniqueValues() {
-    let arr = [14, 28, 3, 14, 5, 8, 2, 2, 28];
-    let unique = [];
-    let i = arr.length;
-do {
-unique.push(arr[i]);
-} while (arr[i] !== arr[i-1]);
-console.log(unique);
+function getOnlyUnRepeated(arr) {
+    const newArr = [];
+    const repeatedValues = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (newArr.indexOf(arr[i]) === -1) {
+            newArr.push(arr[i]);
+        } else {
+            repeatedValues.push(arr[i]);
+        }
+    }
+    for (let i = 0; i < repeatedValues.length; i++) {
+        newArr.splice(newArr.indexOf(repeatedValues[i]), 1);
+    }
+    return newArr;
 }
-uniqueValues();
 
-    // for (let i = 0; i < arr.length; i++) {
-    //     for (let j = 0; j < arr.length; j++) {
-    //         if (arr[j] !== arr[i]) {
-    //             unique.push(arr[i]);
-    //             console.log(unique);
-    //             break;
-    //         } else {
-    //             console.log("There are no unique values in the array");
-    //         }
-    //     }
-    // }
+console.log(getOnlyUnRepeated([1, 2, 2, 3]));
