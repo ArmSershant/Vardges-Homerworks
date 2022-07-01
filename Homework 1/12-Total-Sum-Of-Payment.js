@@ -56,16 +56,23 @@ const payments = [
    function getTotalSumOfPayment() {
     let firstSum = 0;
     let secondSum = 0;
+    let first = 0;
+    let sec = 0;
     for (let i = 0; i < payments.length; i++) {
       if (payments[i].studentId === 1) {
         firstSum += payments[i].payedAmount;
+        first = i;
     }
   }
     for (let j = 0; j < payments.length; j++) {
       if (payments[j].studentId === 2) {
         secondSum += payments[j].payedAmount;
+        sec = j;
     }
   }
-  console.log('firstSum: ' + firstSum, 'secondSum: ' + secondSum);
+  console.log(payments[first]);
+  console.log(firstSum);
+  console.log(payments[sec]);
+  console.log(secondSum);
 }
 getTotalSumOfPayment();
