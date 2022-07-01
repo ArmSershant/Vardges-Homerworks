@@ -1,7 +1,7 @@
 // For the given list of payments do the following exercises:
 // Տրված վճարումնեի ցուցակի համար կատարել հետևյալ վարժություննորը։
-// Find the count of all payments that are more than 1500
-// Գտնել բոլոր այն վճարումների քանակը, որոնք ավելին են 1500-ից
+// Calculate the average of all payments
+// Հաշվել բոլոր կատարված վճարուների թվաբանական միջինը
 const payments = [
     {
       studentId: 1, // Unique identifier for each student
@@ -52,13 +52,12 @@ const payments = [
       year: 2023
     }
    ];
-    function getCountOfAmount(){
-    let count = 0;
-    for (i = 0; i < payments.length; i++) {
-        if (payments[i].payedAmount > 1500) {
-            count++;
-        }
-    }
-    console.log(count);
-    }
-    getCountOfAmount();
+   function getAverageOfPayments(){
+       let sum = 0;
+       for (let i = 0; i < payments.length; i++) {
+           sum += payments[i].payedAmount;
+       }
+       console.log(sum/payments.length);
+   }
+    getAverageOfPayments();
+    
