@@ -2,7 +2,7 @@
 // Տրված քննությունների արդյունքների ցուցակի համար, կատարել հետևյալ վարժությունները։
 // Return  the evaluation record with the lowest evaluation score,
 // Վերադարձնել ամենացածր գնահատականով(score) քննության արդյունքը։
- 
+
 const evaluations = [
  {
    studentId: 1, // Unique identifier for each student
