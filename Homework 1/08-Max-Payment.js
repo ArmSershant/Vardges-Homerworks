@@ -1,5 +1,7 @@
 // For the given list of payments do the following exercises:
 // Տրված վճարումնեի ցուցակի համար կատարել հետևյալ վարժություննորը։
+// Find the max payment 
+// Գտնել մեծագույն կատարված վճարումը
 const payments = [
     {
       studentId: 1, // Unique identifier for each student
@@ -50,10 +52,14 @@ const payments = [
       year: 2023
     }
    ];
-for (let i = 0; i < payments.length; i++) {
-    let max = payments[0].payedAmount;
-        if (payments[i].payedAmount > max){
+    function getMaxPayment(){
+    let i = 0;
+    let max = payments[i].payedAmount;
+    for (i = 0; i < payments.length; i++) {
+        if (payments[i].payedAmount > max) {
             max = payments[i].payedAmount;
         }
-        console.log(max);
+    }
+    console.log(max);
 }
+getMaxPayment();
