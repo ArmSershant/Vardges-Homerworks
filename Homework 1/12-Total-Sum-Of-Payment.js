@@ -53,13 +53,19 @@ const payments = [
       year: 2023
     }
    ];
-   function totalSumOfPayment(payments) {
-    let totalSum = 0;
+   function getTotalSumOfPayment() {
+    let firstSum = 0;
+    let secondSum = 0;
     for (let i = 0; i < payments.length; i++) {
       if (payments[i].studentId === 1) {
-      totalSum += payments[i].payedAmount;
+        firstSum += payments[i].payedAmount;
     }
-    return totalSum;
   }
+    for (let j = 0; j < payments.length; j++) {
+      if (payments[j].studentId === 2) {
+        secondSum += payments[j].payedAmount;
+    }
+  }
+  console.log('firstSum: ' + firstSum, 'secondSum: ' + secondSum);
 }
-totalSumOfPayment();
+getTotalSumOfPayment();
