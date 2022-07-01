@@ -1,3 +1,7 @@
+// For the given list of payments do the following exercises:
+// Տրված վճարումնեի ցուցակի համար կատարել հետևյալ վարժություննորը։
+// Calculate the sum of all payments
+// Հաշվել վճարումների ամբողջ գումարը
 const payments = [
     {
       studentId: 1, // Unique identifier for each student
@@ -48,12 +52,11 @@ const payments = [
       year: 2023
     }
    ];
-   function getSumOfAmount(){
-   for (let i = 0; i < payments.length; i++) {
-        //  let first = payments[0].payedAmount;  
-        let sum = payments[i].payedAmount;   
-        sum += payments[i].payedAmount ;
-            console.log(sum);
-   }
+function getSumOfPayments(){
+    let sum = 0;
+    for (let i = 0; i < payments.length; i++) {
+        sum += payments[i].payedAmount;
+    }
+    console.log(sum);
 }
-getSumOfAmount();
+getSumOfPayments();
