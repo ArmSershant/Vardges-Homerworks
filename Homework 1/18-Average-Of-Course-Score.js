@@ -1,3 +1,7 @@
+// For the given list of exams, and evaluations do the following exercises.
+// Տրված քննությունների արդյունքների ցուցակի համար, կատարել հետևյալ վարժությունները։
+// Return array of courses including average evaluation for each course,
+// Վերադարձնել բոլոր առարկաների ցուցակը և նրանց միջին քննական արդյունքը։
 const evaluations = [
   {
     studentId: 1, // Unique identifier for each student
