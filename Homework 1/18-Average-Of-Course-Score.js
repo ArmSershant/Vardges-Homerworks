@@ -67,7 +67,7 @@ const evaluations = [
     score: 25
   }
  ];
-function courses() {
+function getAverageScore() { 
   let courseName = evaluations[0].courseName ;
   let courseName2 = evaluations[1].courseName ;
   let Course1 =[];
@@ -107,4 +107,4 @@ console.log(result1)
 console.log(result2)
 console.log(result3)
 } 
-courses()
+getAverageScore();
