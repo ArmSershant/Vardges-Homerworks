@@ -68,48 +68,14 @@ const evaluations = [
     }
    ];
 
-function averageMore40() {
-    let count1 = 0;
-    let count2 = 0;
-    let count3 = 0;
-    let id1 = [];
-    let id2 = [];
-    let id3 = [];
-    let studentsAverage = [];
-    let studentsMore40 = [];
+function getAverage() {
+    let sum = 0;
     for (let i = 0; i < evaluations.length; i++) {
-        if (evaluations[i].studentId == 1) {
-            id1.push(evaluations[i]);
-        } else if (evaluations[i].studentId == 2) {
-            id2.push(evaluations[i])
-        } else if (evaluations[i].studentId == 3) {
-            id3.push(evaluations[i])
+        sum += evaluations[i].score;
+        let scoreAvg = sum / evaluations.length;
+        if (scoreAvg < 40) {
+            console.log(scoreAvg);
         }
     }
-    let sum1 = 0;
-    let student;
-    for (let i = 0; i < id1.length; i++) {
-        sum1 = sum1 + id1[i].score;
-    }
-    let average1 = sum1/id1.length;
-    studentsAverage.push(average1);
-    let sum2 = 0;
-    for (let i = 0; i < id2.length; i++) {
-        sum2 = sum2 + id2[i].score;
-    }
-    let average2 = sum2/id2.length;
-    studentsAverage.push(average2);
-    let sum3 = 0;
-    for (let i = 0; i < id3.length; i++) {
-        sum3 = sum3 + id3[i].score;
-    }
-    let average3 = sum3/id3.length;
-    studentsAverage.push(average3);
-    for (let i = 0; i < studentsAverage.length; i++) {
-        if (studentsAverage[i]>40) {
-            studentsMore40.push(studentsAverage[i])
-        }
-    }
-    console.log(studentsMore40);
 }
-averageMore40()
+getAverage()
