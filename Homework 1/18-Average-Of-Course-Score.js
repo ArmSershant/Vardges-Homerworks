@@ -70,12 +70,12 @@ const evaluations = [
 function getAverageScore() { 
   let courseName = evaluations[0].courseName ;
   let courseName2 = evaluations[1].courseName ;
-  let Course1 =[];
+  let course1 =[];
   let course2 = [];
   let course3 = [];
   for (let i = 0; i < evaluations.length; i++) {
     if (courseName == evaluations[i].courseName) {
-      Course1.push(evaluations[i])
+      course1.push(evaluations[i])
     } else if(courseName2 == evaluations[i].courseName) {
       course2.push(evaluations[i])
     } else {
@@ -83,11 +83,11 @@ function getAverageScore() {
     }
   }
   let sum1=0;
-  for (let i = 0; i < Course1.length; i++) {
-    sum1 = sum1 + Course1[i].score;
+  for (let i = 0; i < course1.length; i++) {
+    sum1 = sum1 + course1[i].score;
   }
-  let average1 = sum1 / Course1.length;
-  let result1= [Course1[0].courseName,average1];
+  let average1 = sum1 / course1.length;
+  let result1= [course1[0].courseName,average1];
   result1.push()
   let sum2=0;
   for (let i = 0; i < course2.length; i++) {
