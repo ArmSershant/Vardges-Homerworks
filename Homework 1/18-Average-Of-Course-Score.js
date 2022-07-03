@@ -70,7 +70,7 @@ const evaluations = [
 function getAverageScore() { 
   let courseName = evaluations[0].courseName ;
   let courseName2 = evaluations[1].courseName ;
-  let course1 =[];
+  let course1 = [];
   let course2 = [];
   let course3 = [];
   for (let i = 0; i < evaluations.length; i++) {
