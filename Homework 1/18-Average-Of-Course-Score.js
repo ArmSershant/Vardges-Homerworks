@@ -82,26 +82,26 @@ function getAverageScore() {
       course3.push(evaluations[i])
     }
   }
-  let sum1=0;
+  let sum1 = 0;
   for (let i = 0; i < course1.length; i++) {
     sum1 = sum1 + course1[i].score;
   }
   let average1 = sum1 / course1.length;
-  let result1= [course1[0].courseName,average1];
+  let result1 = [course1[0].courseName,average1];
   result1.push()
-  let sum2=0;
+  let sum2 = 0;
   for (let i = 0; i < course2.length; i++) {
     sum2 = sum2 + course2[i].score;
   }
   let average2 = sum2 / course2.length;
   let result2 = [course2[0].courseName,average2];
   result2.push()
-  let sum3=0;
+  let sum3 = 0;
   for (let i = 0; i < course3.length; i++) {
     sum3 = sum3 + course3[i].score;
   }
   let average3 = sum3 / course3.length;
-  let result3= [course3[0].courseName,average3];
+  let result3 = [course3[0].courseName,average3];
   result3.push()
 console.log(result1)
 console.log(result2)
