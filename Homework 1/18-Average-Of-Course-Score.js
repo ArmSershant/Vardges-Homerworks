@@ -180,6 +180,7 @@ const evaluations = [
   }
  ];
             //  SECOND VARIANT
+            // (NODE JS Console ում չի տպում բայց չգիտեմ ինչի․ jsfiddle.net ով աշխատումա)
 //  function getAverageScore(){
 //   let averageScore = {};
 //   for(let i = 0; i < evaluations.length; i++){
