@@ -1,4 +1,4 @@
-// Create a function that is receiving a collection of employees and using toString() returns a string with comma-separated full names.
+// Create a function that is receiving a collection of employees and returns a string containing emails in the following format email1@example.com//email2@example.com//email3@example.com
 const employees = [
     {
       "firstName": "Arabela",
@@ -81,6 +81,8 @@ const employees = [
       "gender": "Female"
     }
   ]
-employees.forEach(function(employees) {
-    console.log(employees.firstName.toString()+ " " + employees.lastName.toString() + ",");
-});
+function joiner() {
+    const emails = employees.map((emails) => emails.email).join("//");
+    console.log(emails);
+}
+joiner();
