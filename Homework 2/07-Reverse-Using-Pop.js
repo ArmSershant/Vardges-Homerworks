@@ -1,4 +1,4 @@
-// Create a custom Array.prototype.myJoin should work similarly to Array.prototype.join
+// Create a function that is receiving an array and returns reversed one using pop()
 const employees = [
     {
       "firstName": "Arabela",
@@ -81,6 +81,8 @@ const employees = [
       "gender": "Female"
     }
   ]
-  employees.forEach(function(employees){
-  employees.map((employees) => employees.firstName + ":" + employees.lastName + ":" + employees.email + ":" + employees.salary + ":" + employees.isEngineer + ":" + employees.gender);
-  });
+    employees.forEach(function(employees){
+    let reversedEmployees = [];
+    reversedEmployees.push(employees.pop());
+    console.log(...reversedEmployees);
+});
