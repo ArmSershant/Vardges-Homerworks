@@ -1,4 +1,4 @@
-// Using method every() create a function that is checking if all employees have a salary of more than n
+// Using method every() create a function that is checking if all employees are engineers
 const employees = [
     {
       "firstName": "Arabela",
@@ -80,13 +80,14 @@ const employees = [
       "isEngineer": false,
       "gender": "Female"
     }
-  ]  
-function checkAllEmployeesWithSalary(employees) {
-    let n = 8.00;
-        for (let i = 0; i < this.length; i++) {
-            return this[i].every(function (employees) {
-                console.log(this[i].salary > n);
-        });
+  ]
+  
+function CheckIfEngineer(employees) {
+    for (let i = 0; i < employees.length; i++) {
+        employees.every(engineer)
+        function engineer(isEngineer) {
+        console.log(employees[i].isEngineer);
+        };
     }
 }
-console.log(checkAllEmployeesWithSalary(employees));
+CheckIfEngineer(employees);
