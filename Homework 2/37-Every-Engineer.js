@@ -88,6 +88,6 @@ function CheckIfEngineer(employees) {
         function engineer(isEngineer) {
         console.log(employees[i].isEngineer);
         };
-    }
-}
+    };
+};
 CheckIfEngineer(employees);

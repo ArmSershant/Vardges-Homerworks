@@ -81,13 +81,14 @@ const employees = [
       "gender": "Female"
     }
   ]  
-function checkAllEmployeesWithSalary(employees) {
+function allEmployeesBigSalary(employees) {
     let n = 8.00;
-        for (let i = 0; i < this.length; i++) {
+        for (let i = 0; i < employees.length; i++) {
             employees.every(bigSalary)
             function bigSalary(salary) {
-                console.log(employees[i].salary > n);
+                return Total = employees[i].salary > n;
         };
-    }
-}
-console.log(checkAllEmployeesWithSalary(employees));
+    };
+    console.log(Total);
+};
+allEmployeesBigSalary(employees);
