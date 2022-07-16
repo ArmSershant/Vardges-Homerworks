@@ -1,0 +1,1 @@
+// Create a custom Array.prototype.myConcat should work similarly to Array.prototype.concat
