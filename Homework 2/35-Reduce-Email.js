@@ -83,7 +83,7 @@ const employees = [
   ]  
 function reduceEmail(employees) {
   return employees.reduce((acc, curr) => {
-    return acc + curr.email + '\n';
+    return acc + curr.email + '//';
   }, '');
 }
 console.log(reduceEmail(employees));
