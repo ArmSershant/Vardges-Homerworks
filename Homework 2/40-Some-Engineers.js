@@ -1,4 +1,4 @@
-// Write a function that will ensure that there are Females in the list of employees 
+// Write a function that will ensure that there are engineers in the list of employees
 const employees = [
     {
       "firstName": "Arabela",
@@ -80,17 +80,17 @@ const employees = [
       "isEngineer": false,
       "gender": "Female"
     }
-  ]  
-function isFemale (employees) {
+  ]
+function isEngineer(employees) {
     for (let i = 0; i < employees.length; i++) {
-        employees.some(females)
-        function females(gender) {
-          if (employees.gender === "Female") {
-            console.log(employees[i].gender);
-          } else {
-            console.log("Not all are Females");
-          };
+        employees.some(engineers)
+        function engineers(isEngineer) {
+            if (employees.isEngineer === true) {
+            console.log(engineers.isEngineer);
+            } else {
+            console.log("Not all are engineers");
+            }
         };
     };
 };
-isFemale(employees);
+isEngineer(employees);
