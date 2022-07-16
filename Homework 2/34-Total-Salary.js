@@ -83,7 +83,7 @@ const employees = [
 ]
 function totalSalary(employees) {
   for (var i = 0; i < employees.length; i++) {
-    return employees.reduce((acc, curr) => acc + curr.salary, 0);
+    return employees.reduce((acc, curr) => acc + curr.salary);
   }
 }
 console.log(totalSalary(employees));
