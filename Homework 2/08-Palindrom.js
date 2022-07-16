@@ -1,3 +1,4 @@
+// Create a function that is receiving a sting argument and checks if it is a palindrome using pop() ???
 let palindromeArray = (arr) => {
   let isPalindrome = true;
   for (let i = 0; i < arr.length / 2; i++) {
