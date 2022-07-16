@@ -1,0 +1,1 @@
+// Create a custom Array.prototype.myFilter should work similarly to Array.prototype.filter
