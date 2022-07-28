@@ -1,5 +1,4 @@
 // Create an object and methods to support the following functionality 
-// const obj = {}; 
 const obj = {name : 'Alice', age : 30,}
 obj.setName = function(name){
     this.name = name;
